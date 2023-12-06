@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Management System Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <style>
+        body {
+          
+            background-size:cover;
+            background-image: url("https://spiderimg.amarujala.com/assets/images/2020/04/29/750x506/lpu_1588148335.png");       }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .university-logo {
+            width: 300px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .university-info {
+            color: #e0cbcb;
+        }
+
+        .login-container {
+            background-color: rgba(22, 37, 67, 0.6);
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(247, 243, 243, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            text-decoration-color: #8B4513;
+            text-align: start;
+            font-family:serif;
+            font-size: 30px;
+            font-weight: lighter;
+            text-shadow:2px 2px 2px #efedf6;
+            
+        }
+
+        .form-group {
+            margin: 15px 0;
+            font-size: small;
+            color: rgb(248, 248, 214);
+        }
+
+        label {
+            display: block;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #737070;
+            border-radius: 5px;
+            background-color: rgba(246, 245, 249, 0.7);
+        }
+        #password{width: 275px;}
+
+        .button-container {
+            text-align: center;
+        }
+        button:hover{background-color: rgb(184, 209, 203);}
+
+        button {
+            background-color: rgb(142, 145, 160) ;
+            color: #e3dddd;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .system-logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .system-logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .bottom-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .bottom-links a {
+            color: rgba(0, 0, 0);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: smaller;
+            text-shadow: 2px 2px 2px rgb(48, 46, 46);
+
+            
+        }
+        .login-box{
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: rgba(48, 43, 66, 0.5)
+        }
+        a{text-decoration: none;
+        color: black;}
+        a:hover{
+            color:rgb(244, 236, 233);
+            
+            transition: 0.5s;}
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="university-info">
+            
+        </div>
+
+    </div>
+    <div class="login-box">
+        <div class="system-logo">
+                    <h2 id="heading">University Management System</h2>
+        </div>
+
+        <div class="login-container">
+        <form action="your_login_processing_script.php" method="post">
+            <div class="form-group">
+                <label for="office">Office:</label>
+                <select name="office" id="office">
+                    <option value="headoffice">Head Office</option>
+                    <option value="nepaloffice">Nepal Office</option>
+                    <option value="chandigarhoffice">Chandigarh Office</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Registration:</label>
+                <select name="destination" id="destination">
+                    <option value="dashboard">Dashboard</option>
+                    <option value="homepage">Home Page</option>
+                    <option value="assignmentupload">Assignment Upload</option>
+                    <option value="timetable">Timetable</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="button-container">
+                <button type="submit"><a href="http://127.0.0.1:5500/dashboardfinal.html">Log In</a></button>
+            </div>
+
+        </form>
+    
+    </div>
+
+    <div class="bottom-links">
+        <a href="#">Student Mail</a>
+        <a href="#">Staff Mail</a>
+    </div>
+    </div>
+</body>
+</html>
